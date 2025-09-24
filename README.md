@@ -32,10 +32,10 @@ behaviour using regression and residual analysis.
 - **Results Saving:**
   - Export thresholds and detected events to CSV reporting
 
-## Requirements
+## Requirements:
     - pip install -r requirements.txt
 
-##  🎯  How to Run
+##  🎯  How to Run:
 
 1. Clone this repo (git clone <repo-url> cd <repo-folder)
 2. Install Required Dependencies: "pip install -r requirements.txt"
@@ -95,7 +95,7 @@ behaviour using regression and residual analysis.
     - pd.DataFrame.from_dict() converts the thresholds dictionary into a dataframe
     - The results are saved locally]
 
-### Further Explanation of regression/alert rules 
+### Further Explanation of regression/alert rules: 
     - Linear Regression is used to model the trend of each axis overtime. Standrdization is applied to put all axes on the same scale
     - Resiudals represent how far the reading is from the predicted regresion value.
     - To define the thresholds for alerts and erros the residuals are used to do so.
@@ -121,8 +121,8 @@ behaviour using regression and residual analysis.
 ### Notes:
 - I read the data from the neon database to train the linear regression model however I still will include the
 original csv from the workshop that was used for the database in the data folder
+- The other csv's are generated from the lab
 - The regression plots tend to be more flatter than usual I believe this could be due to the data from the database and how it was structured but it could also be how I normalized/standardized it
-- 
 
 🤝 Contributing
 This is a Practical Lab developed for CSNC8010. If any questions arise do not hesitate to contact the project member.
