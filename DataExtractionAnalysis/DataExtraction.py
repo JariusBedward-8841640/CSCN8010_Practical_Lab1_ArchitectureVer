@@ -1,14 +1,16 @@
+import os
+import pandas as pd
+from sqlalchemy import create_engine
+from dotenv import load_dotenv
+
 class DataExtraction:
-    def __init__(self, db_url):
-        self.db_url = db_url
-        self.connection = None
-        self.data = None
+    def __init__(self):
+        load_dotenv()
+        self.db_url = os.getenv("DATABASE_URL")
+        self.engine = create_engine(self.db_url)
 
 
-    def connect(self):
-        #TODO: Implement database connection (using SQLAlchemy)
-        pass
+    def connect(self, query: str) -> pd.DataFrame:
 
-    def load_data(self):
-        # TODO: implement query to fetch data from db
-        pass
+        return pd.read_sql(query, self.engine)
+
