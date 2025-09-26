@@ -51,7 +51,7 @@ alerts.plot_with_alerts(df_clean)
 # Save results
 
 thresholds_df = pd.DataFrame.from_dict(thresholds, orient='index')
-thresholds.to_csv("data/results_thresholds.csv", index_label="Axis")
-alerts_df.to_csv("data/results_detected_events.csv", index=False)
+thresholds.to_csv("data/processed/results_thresholds.csv", index_label="Axis")
+alerts_df.to_csv("data/processed/results_detected_events.csv", index=False)
 print("Results saved in the data folder successfully!")
 
