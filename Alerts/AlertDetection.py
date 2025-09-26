@@ -60,7 +60,7 @@ class AlertDetection:
         self.alerts_df = pd.DataFrame(alerts, columns=["Alert", "Type", "Start Time", "End Time"])
         return self.alerts_df
 
-    def detect_errors(self, df_train):
+    def plot_with_alerts(self, df_train):
 
         for axis in self.axis_cols:
             x_test = self.df_synth["time_min"] /  60

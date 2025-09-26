@@ -10,7 +10,7 @@ class DataExtraction:
         self.engine = create_engine(self.db_url)
 
 
-    def connect(self, query: str) -> pd.DataFrame:
+    def load_data(self, query: str) -> pd.DataFrame:
 
         return pd.read_sql(query, self.engine)
 
