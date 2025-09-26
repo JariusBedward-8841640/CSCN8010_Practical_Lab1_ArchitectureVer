@@ -2,7 +2,7 @@
 # from importlib.metadata import Prepared
 import pandas as pd
 
-from DataExtractionAnalysis.DataExtraction import DataExtraction
+from DataExtraction.DataExtraction import DataExtraction
 from DataPreperation.DataPreperation import DataPreperation
 from DataPreperation.SyntheticData import SyntheticData
 from ModelTraining.RegressionModel import RegressionModel
